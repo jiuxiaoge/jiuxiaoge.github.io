@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-10-06T13:44:54.798Z</updated>
+  <updated>2018-10-06T13:48:19.405Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2018/10/06/%E6%B5%8B%E8%AF%95/"/>
     <id>http://yoursite.com/2018/10/06/测试/</id>
     <published>2018-10-06T13:28:39.000Z</published>
-    <updated>2018-10-06T13:44:54.798Z</updated>
+    <updated>2018-10-06T13:48:19.405Z</updated>
     
     <content type="html"><![CDATA[<p>categories:<br>/* 分类，支持多级，比如：</p><ul><li>technology</li><li>computer</li><li>computer-aided-art<br>*/</li><li>test</li></ul><p>tags:<br>/* 标签<br>** 多个可以这样写</p><ul><li>标签1</li><li>标签2</li><li>标签3<br>*/</li><li>ceshi</li><li>ceshi2<br>description:<br>/<em> 文章的描述，在每篇文章标题下方显示</em>/</li></ul><p>comments: false<br>/<em> 是否开启评论<br><strong> 默认值是 true</strong> 要关闭写 false</em>/</p><p>photos:<br>/* Gallery support，用来支持画廊 / 相册，用法如下：</p><ul><li>photo_url_1</li><li>photo_url_2</li><li>photo_url_3<br>*/</li></ul><p>link:<br>/<em> 文章的外部链接</em>/</p><p>top: false<br>/<em> 文章置顶<br>** true就是开启，flase就是关闭置顶。</em>/</p><p>ce shi nei rong</p>]]></content>
     
@@ -40,6 +40,8 @@
       
     
     </summary>
+    
+      <category term="-ceshi" scheme="http://yoursite.com/categories/ceshi/"/>
     
     
   </entry>
