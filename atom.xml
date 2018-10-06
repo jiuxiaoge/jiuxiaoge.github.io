@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-10-03T14:21:41.914Z</updated>
+  <updated>2018-10-06T13:28:39.519Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>测试</title>
+    <link href="http://yoursite.com/2018/10/06/%E6%B5%8B%E8%AF%95/"/>
+    <id>http://yoursite.com/2018/10/06/测试/</id>
+    <published>2018-10-06T13:28:39.000Z</published>
+    <updated>2018-10-06T13:28:39.519Z</updated>
+    
+    <content type="html"><![CDATA[<p>categories:<br>/* 分类，支持多级，比如：</p><ul><li>technology</li><li>computer</li><li>computer-aided-art<br>*/</li></ul><p>tags:<br>/* 标签<br>** 多个可以这样写</p><ul><li>标签1</li><li>标签2</li><li>标签3<br>*/</li></ul><p>description:<br>/<em> 文章的描述，在每篇文章标题下方显示</em>/</p><p>comments:<br>/<em> 是否开启评论<br><strong> 默认值是 true</strong> 要关闭写 false</em>/</p><p>photos:<br>/* Gallery support，用来支持画廊 / 相册，用法如下：</p><ul><li>photo_url_1</li><li>photo_url_2</li><li>photo_url_3<br>*/</li></ul><p>link:<br>/<em> 文章的外部链接</em>/</p><p>top: true<br>/<em> 文章置顶<br>** true就是开启，flase就是关闭置顶。</em>/</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;categories:&lt;br&gt;/* 分类，支持多级，比如：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;technology&lt;/li&gt;
+&lt;li&gt;computer&lt;/li&gt;
+&lt;li&gt;computer-aided-art&lt;br&gt;*/&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;tags:&lt;br&gt;/* 标签&lt;br
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
