@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-10-06T15:22:43.777Z</updated>
+  <updated>2018-10-10T09:24:46.721Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,20 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>LeetCode20</title>
+    <link href="http://yoursite.com/2018/10/10/LeetCode20/"/>
+    <id>http://yoursite.com/2018/10/10/LeetCode20/</id>
+    <published>2018-10-10T09:24:46.000Z</published>
+    <updated>2018-10-10T09:24:46.721Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>hexo在next主题下如何添加分类和标签</title>
