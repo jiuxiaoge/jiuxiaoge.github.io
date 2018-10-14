@@ -115,25 +115,25 @@
 
 
 
-  <meta name="description" content="简单记录一下在hexo的next主题下如何添加分类和标签。">
-<meta name="keywords" content="搭建博客,前端,next,备忘">
+  <meta name="description" content="非常简单的一道使用vector容器的题，直接敲的代码，不涉及高级算法。">
+<meta name="keywords" content="算法,LeetCode,stack,vector">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo在next主题下如何添加分类和标签">
-<meta property="og:url" content="http://yoursite.com/2018/10/06/hexo在next主题下如何添加分类和标签/index.html">
+<meta property="og:title" content="LeetCode682">
+<meta property="og:url" content="http://yoursite.com/2018/10/14/LeetCode682/index.html">
 <meta property="og:site_name" content="沈徒一">
-<meta property="og:description" content="简单记录一下在hexo的next主题下如何添加分类和标签。">
+<meta property="og:description" content="非常简单的一道使用vector容器的题，直接敲的代码，不涉及高级算法。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-10-11T05:04:59.302Z">
+<meta property="og:updated_time" content="2018-10-14T06:55:29.644Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo在next主题下如何添加分类和标签">
-<meta name="twitter:description" content="简单记录一下在hexo的next主题下如何添加分类和标签。">
+<meta name="twitter:title" content="LeetCode682">
+<meta name="twitter:description" content="非常简单的一道使用vector容器的题，直接敲的代码，不涉及高级算法。">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/10/06/hexo在next主题下如何添加分类和标签/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/10/14/LeetCode682/"/>
 
 
 
@@ -143,7 +143,7 @@
   };
 </script>
 
-  <title>hexo在next主题下如何添加分类和标签 | 沈徒一</title>
+  <title>LeetCode682 | 沈徒一</title>
   
 
 
@@ -311,7 +311,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/06/hexo在next主题下如何添加分类和标签/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/14/LeetCode682/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="沈徒一">
@@ -328,7 +328,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">hexo在next主题下如何添加分类和标签
+          <h1 class="post-title" itemprop="name headline">LeetCode682
               
             
           </h1>
@@ -353,32 +353,20 @@
                 
               
 
-              <time title="创建时间：2018-10-06 22:38:18" itemprop="dateCreated datePublished" datetime="2018-10-06T22:38:18+08:00">2018-10-06</time>
+              <time title="创建时间：2018-10-14 13:24:31 / 修改时间：14:55:29" itemprop="dateCreated datePublished" datetime="2018-10-14T13:24:31+08:00">2018-10-14</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-10-11 13:04:59" itemprop="dateModified" datetime="2018-10-11T13:04:59+08:00">2018-10-11</time>
               
             
             
               <span class="post-letters-count">
               &nbsp; | &nbsp;
-              <span>730 字</span>
+              <span>685 字</span>
               &nbsp; | &nbsp;
-              <span>2 min</span>
+              <span>3 min</span>
               </span>
             
           </span>
@@ -395,7 +383,14 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/前端-搭建博客/" itemprop="url" rel="index"><span itemprop="name">前端 - 搭建博客</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/算法/" itemprop="url" rel="index"><span itemprop="name">算法</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/算法/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a></span>
 
                 
                 
@@ -425,92 +420,40 @@
       
 
       
-        <p>简单记录一下在hexo的next主题下如何添加分类和标签。</p>
+        <p>非常简单的一道使用vector容器的题，直接敲的代码，不涉及高级算法。</p>
 <a id="more"></a>
-<h1>如何在next主题下添加分类和标签</h1>
-<p>要想写博客，分类和标签是必不可少的，那么我们怎么在<strong>hexo</strong>中的==next==主题下进行添加分类和标签的操作呢？</p>
-<h3 id="环境"><a class="header-anchor" href="#环境">¶</a>环境</h3>
-<h4 id="hexo"><a class="header-anchor" href="#hexo">¶</a>hexo</h4>
-<ul>
-<li>hexo: 3.7.1</li>
-<li>hexo-cli: 1.1.0</li>
-<li>os: Windows_NT 10.0.17134 win32 x64</li>
-<li>http_parser: 2.8.0</li>
-<li>node: 8.12.0</li>
-<li>v8: 6.2.414.66</li>
-<li>uv: 1.19.2</li>
-<li>zlib: 1.2.11</li>
-<li>ares: 1.10.1-DEV</li>
-<li>modules: 57</li>
-<li>nghttp2: 1.32.0</li>
-<li>napi: 3</li>
-<li>openssl: 1.0.2p</li>
-<li>icu: 60.1</li>
-<li>unicode: 10.0</li>
-<li>cldr: 32.0</li>
-<li>tz: 2017c</li>
-</ul>
-<h4 id="next"><a class="header-anchor" href="#next">¶</a>next</h4>
-<ul>
-<li>next: 6.0.0</li>
-</ul>
-<h3 id="添加分类和标签"><a class="header-anchor" href="#添加分类和标签">¶</a>添加分类和标签</h3>
-<p><a href="http://theme-next.iissnan.com/theme-settings.html" target="_blank" rel="noopener">参考官方文档</a></p>
-<h4 id="添加分类页面"><a class="header-anchor" href="#添加分类页面">¶</a>添加分类页面</h4>
+<h1>题目描述</h1>
+<p>You’re now a baseball game point recorder.</p>
+<p>Given a list of strings, each string can be one of the 4 following types:</p>
 <ol>
-<li>新建页面</li>
+<li><strong>Integer</strong> (one round’s score): Directly represents the number of points you get in this round.</li>
+<li><strong>“+”</strong> (one round’s score): Represents that the points you get in this round are the sum of the last two valid round’s points.</li>
+<li><strong>“D”</strong> (one round’s score): Represents that the points you get in this round are the doubled data of the last valid round’s points.</li>
+<li><strong>“C”</strong> (an operation, which isn’t a round’s score): Represents the last valid round’s points you get were invalid and should be removed.</li>
 </ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> your-hexo-site</span><br><span class="line">$ hexo new page categories</span><br></pre></td></tr></table></figure>
-<p>在终端窗口下，定位到 <strong>Hexo</strong> 站点目录下。使用 hexo new page 新建一个页面，命名为 ==categories==</p>
-<ol start="2">
-<li>设置页面类型<br>
-编辑刚新建的页面，将页面的 type 设置为 categories ，主题将自动为这个页面显示分类。页面内容如下：</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">title: 分类</span><br><span class="line">date: 2018-10-6 12:39:04</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<ol start="3">
-<li>修改菜单<br>
-在菜单中添加链接。编辑 ==主题配置文件== ， 添加 categories 到 menu 中，如下:</li>
-</ol>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: <span class="regexp">/</span></span><br><span class="line"><span class="regexp">  archives: /</span>archives</span><br><span class="line">  categories: <span class="regexp">/categories</span></span><br></pre></td></tr></table></figure>
-<h4 id="添加标签页面"><a class="header-anchor" href="#添加标签页面">¶</a>添加标签页面</h4>
-<ol>
-<li>新建页面</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> your-hexo-site</span><br><span class="line">$ hexo new page tags</span><br></pre></td></tr></table></figure>
-<p>在终端窗口下，定位到 <strong>Hexo</strong> 站点目录下。使用 hexo new page 新建一个页面，命名为 ==categories==</p>
-<ol start="2">
-<li>设置页面类型<br>
-编辑刚新建的页面，将页面的 type 设置为 categories ，主题将自动为这个页面显示分类。页面内容如下：</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">title: 标签</span><br><span class="line">date: 2018-10-6 12:39:04</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<ol start="3">
-<li>修改菜单<br>
-在菜单中添加链接。编辑 ==主题配置文件== ， 添加 categories 到 menu 中，如下:</li>
-</ol>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: <span class="regexp">/</span></span><br><span class="line"><span class="regexp">  archives: /</span>archives</span><br><span class="line">  tags: <span class="regexp">/tags</span></span><br></pre></td></tr></table></figure>
-<h3 id="创建模板"><a class="header-anchor" href="#创建模板">¶</a>创建模板</h3>
-<p>在编写md文件时如果总是要填写上述步骤很麻烦，所以建立一个模板时最好的选择，这个模板就在</p>
-<blockquote>
-<p>\scaffolds\<a href="http://post.md" target="_blank" rel="noopener">post.md</a></p>
-</blockquote>
-<p>我们只需要修改里面的内容就行了，先看一下<a href="https://hexo.io/zh-cn/docs/front-matter.html#%E5%88%86%E7%B1%BB%E5%92%8C%E6%A0%87%E7%AD%BE" target="_blank" rel="noopener">官方文档</a>在这里都规定了什么变量,我们进行添加就行了。<br>
-我使用的模板：</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">categories:</span><br><span class="line">tags:</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>Each round’s operation is permanent and could have an impact on the round before and the round after.</p>
+<p>You need to return the sum of the points you could get in all the rounds.</p>
+<p><strong>Example 1:</strong></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Input: [<span class="string">"5"</span>,<span class="string">"2"</span>,<span class="string">"C"</span>,<span class="string">"D"</span>,<span class="string">"+"</span>]</span><br><span class="line">Output: <span class="number">30</span></span><br><span class="line">Explanation: </span><br><span class="line">Round <span class="number">1</span>: You could get <span class="number">5</span> points. The sum is: <span class="number">5.</span></span><br><span class="line">Round <span class="number">2</span>: You could get <span class="number">2</span> points. The sum is: <span class="number">7.</span></span><br><span class="line">Operation <span class="number">1</span>: The round <span class="number">2'</span>s data was invalid. The sum is: <span class="number">5.</span>  </span><br><span class="line">Round <span class="number">3</span>: You could get <span class="number">10</span> points (the round <span class="number">2'</span>s data has been removed). The sum is: <span class="number">15.</span></span><br><span class="line">Round <span class="number">4</span>: You could get <span class="number">5</span> + <span class="number">10</span> = <span class="number">15</span> points. The sum is: <span class="number">30.</span></span><br></pre></td></tr></table></figure>
+<p><strong>Example 2:</strong></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">Input: [<span class="string">"5"</span>,<span class="string">"-2"</span>,<span class="string">"4"</span>,<span class="string">"C"</span>,<span class="string">"D"</span>,<span class="string">"9"</span>,<span class="string">"+"</span>,<span class="string">"+"</span>]</span><br><span class="line">Output: <span class="number">27</span></span><br><span class="line">Explanation: </span><br><span class="line">Round <span class="number">1</span>: You could get <span class="number">5</span> points. The sum is: <span class="number">5.</span></span><br><span class="line">Round <span class="number">2</span>: You could get <span class="number">-2</span> points. The sum is: <span class="number">3.</span></span><br><span class="line">Round <span class="number">3</span>: You could get <span class="number">4</span> points. The sum is: <span class="number">7.</span></span><br><span class="line">Operation <span class="number">1</span>: The round <span class="number">3'</span>s data is invalid. The sum is: <span class="number">3.</span>  </span><br><span class="line">Round <span class="number">4</span>: You could get <span class="number">-4</span> points (the round <span class="number">3'</span>s data has been removed). The sum is: <span class="number">-1.</span></span><br><span class="line">Round <span class="number">5</span>: You could get <span class="number">9</span> points. The sum is: <span class="number">8.</span></span><br><span class="line">Round <span class="number">6</span>: You could get <span class="number">-4</span> + <span class="number">9</span> = <span class="number">5</span> points. The sum is <span class="number">13.</span></span><br><span class="line">Round <span class="number">7</span>: You could get <span class="number">9</span> + <span class="number">5</span> = <span class="number">14</span> points. The sum is <span class="number">27.</span></span><br></pre></td></tr></table></figure>
+<p><strong>Note:</strong></p>
 <ul>
-<li>title是文章标题</li>
-<li>data是编写日期。这两个都会自动生成(如果使用命令行创建md文件的话)</li>
-<li>categories中填写分类</li>
-<li>tags中填写标签</li>
+<li>The size of the input list will be between 1 and 1000.</li>
+<li>Every integer represented in the list will be between -30000 and 30000.</li>
 </ul>
-<p>例如我使用命令行：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo n <span class="string">"hexo在next主题下如何添加分类和标签"</span></span><br></pre></td></tr></table></figure>
-<p>就会在</p>
-<blockquote>
-<p>\source_posts</p>
-</blockquote>
-<p>目录下生成一个<strong>hexo在next主题下如何添加分类和标签</strong>的md文件，显示如下</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: hexo在next主题下如何添加分类和标签</span><br><span class="line">date: 2018-10-06 22:38:18</span><br><span class="line">categories:</span><br><span class="line"><span class="bullet">- </span>前端</span><br><span class="line">  - 搭建博客</span><br><span class="line">tags:</span><br><span class="line"><span class="bullet">- </span>搭建博客</span><br><span class="line"><span class="bullet">- </span>前端</span><br><span class="line"><span class="bullet">- </span>next</span><br><span class="line"><span class="bullet">- </span>备忘</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>随便写点信息，刷新一下hexo，部署一下，在我们的博客上就会看到我们新写的文章了。</p>
+<h2 id="理解题意"><a class="header-anchor" href="#理解题意">¶</a>理解题意</h2>
+<p>输入一个字符串列表，根据字符串的不同会有不同的要求。</p>
+<h2 id="算法"><a class="header-anchor" href="#算法">¶</a>算法</h2>
+<p>直接使用动态数组容器vector，循环遍历字符串，将每轮的得分压入容器中。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdlib&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">calPoints</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt;&amp; ops)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//再创建一个容器</span></span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; vec;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; ops.size(); i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(ops[i] == <span class="string">"C"</span>)&#123;</span><br><span class="line">                vec.pop_back();</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(ops[i] == <span class="string">"D"</span>)&#123;</span><br><span class="line">                vec.push_back(vec[vec.size() - <span class="number">1</span>]*<span class="number">2</span>);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(ops[i] == <span class="string">"+"</span>)&#123;</span><br><span class="line">                vec.push_back(vec[vec.size() - <span class="number">1</span>] + vec[vec.size() - <span class="number">2</span>]);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span>&#123;</span><br><span class="line">                vec.push_back(atoi(ops[i].c_str()));</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; vec.size() ; j++)&#123;</span><br><span class="line">            sum = sum + vec[j];</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> sum;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Solution a;</span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; s;</span><br><span class="line">    s.push_back(<span class="string">"5"</span>);</span><br><span class="line">    s.push_back(<span class="string">"2"</span>);</span><br><span class="line">    s.push_back(<span class="string">"C"</span>);</span><br><span class="line">    s.push_back(<span class="string">"D"</span>);</span><br><span class="line">    s.push_back(<span class="string">"+"</span>);</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; a.calPoints(s) &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>遇到的新知识：C++中如何将字符串转换为int型<br>
+<a href="https://www.cnblogs.com/skunk/archive/2009/05/06/1450903.html" target="_blank" rel="noopener">参考文章</a></p>
+<p>使用<strong>atoi(string)</strong><br>
+可以将string型转换成int型。在这里还要先将字符型变成string型，使用<br>
+<strong>c_str()</strong>。</p>
+<h2 id="结果"><a class="header-anchor" href="#结果">¶</a>结果</h2>
+<p>执行用时: 4 ms, 在Baseball Game的C++提交中击败了99.56% 的用户</p>
 
       
     </div>
@@ -555,13 +498,13 @@
       
         <div class="post-tags">
           
-            <a href="/tags/搭建博客/" rel="tag"># 搭建博客</a>
+            <a href="/tags/算法/" rel="tag"># 算法</a>
           
-            <a href="/tags/前端/" rel="tag"># 前端</a>
+            <a href="/tags/LeetCode/" rel="tag"># LeetCode</a>
           
-            <a href="/tags/next/" rel="tag"># next</a>
+            <a href="/tags/stack/" rel="tag"># stack</a>
           
-            <a href="/tags/备忘/" rel="tag"># 备忘</a>
+            <a href="/tags/vector/" rel="tag"># vector</a>
           
         </div>
       
@@ -574,8 +517,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/10/03/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2018/10/13/LeetCode496/" rel="next" title="【LeetCode】Day4 Next Greater Element I">
+                <i class="fa fa-chevron-left"></i> 【LeetCode】Day4 Next Greater Element I
               </a>
             
           </div>
@@ -583,10 +526,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/10/10/LeetCode20/" rel="prev" title="【LeetCode】Day1 Valid Parentheses">
-                【LeetCode】Day1 Valid Parentheses <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -796,7 +735,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">如何在next主题下添加分类和标签</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#环境"><span class="nav-number">1.0.1.</span> <span class="nav-text">¶环境</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#hexo"><span class="nav-number">1.0.1.1.</span> <span class="nav-text">¶hexo</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#next"><span class="nav-number">1.0.1.2.</span> <span class="nav-text">¶next</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加分类和标签"><span class="nav-number">1.0.2.</span> <span class="nav-text">¶添加分类和标签</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#添加分类页面"><span class="nav-number">1.0.2.1.</span> <span class="nav-text">¶添加分类页面</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#添加标签页面"><span class="nav-number">1.0.2.2.</span> <span class="nav-text">¶添加标签页面</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建模板"><span class="nav-number">1.0.3.</span> <span class="nav-text">¶创建模板</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">题目描述</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#理解题意"><span class="nav-number">1.1.</span> <span class="nav-text">¶理解题意</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#算法"><span class="nav-number">1.2.</span> <span class="nav-text">¶算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#结果"><span class="nav-number">1.3.</span> <span class="nav-text">¶结果</span></a></li></ol></li></ol></div>
             
 
           </div>

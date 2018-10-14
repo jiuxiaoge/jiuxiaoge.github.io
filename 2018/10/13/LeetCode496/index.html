@@ -115,18 +115,18 @@
 
 
 
-  <meta name="description" content="牢记栈的解题原则就是从内到外，所以很多依靠就近原则的问题，如下一个最大数，下一个最小数，括号匹配等问题，都可以考虑使用栈来解决问题。同样这个问题也涉及了vector动态数组容器，map键值对容器！！">
+  <meta name="description" content="牢记栈的解题原则就是从内到外，所以很多依靠就近原则的问题，如下一个最大数，下一个最小数，括号匹配等问题，都可以考虑使用栈来解决问题。 同样这个问题也涉及了vector动态数组容器，map键值对容器！！">
 <meta name="keywords" content="算法,LeetCode,栈">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【LeetCode】Day4 Next Greater Element I">
 <meta property="og:url" content="http://yoursite.com/2018/10/13/LeetCode496/index.html">
 <meta property="og:site_name" content="沈徒一">
-<meta property="og:description" content="牢记栈的解题原则就是从内到外，所以很多依靠就近原则的问题，如下一个最大数，下一个最小数，括号匹配等问题，都可以考虑使用栈来解决问题。同样这个问题也涉及了vector动态数组容器，map键值对容器！！">
+<meta property="og:description" content="牢记栈的解题原则就是从内到外，所以很多依靠就近原则的问题，如下一个最大数，下一个最小数，括号匹配等问题，都可以考虑使用栈来解决问题。 同样这个问题也涉及了vector动态数组容器，map键值对容器！！">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2018-10-13T11:47:31.963Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【LeetCode】Day4 Next Greater Element I">
-<meta name="twitter:description" content="牢记栈的解题原则就是从内到外，所以很多依靠就近原则的问题，如下一个最大数，下一个最小数，括号匹配等问题，都可以考虑使用栈来解决问题。同样这个问题也涉及了vector动态数组容器，map键值对容器！！">
+<meta name="twitter:description" content="牢记栈的解题原则就是从内到外，所以很多依靠就近原则的问题，如下一个最大数，下一个最小数，括号匹配等问题，都可以考虑使用栈来解决问题。 同样这个问题也涉及了vector动态数组容器，map键值对容器！！">
 
 
 
@@ -420,21 +420,33 @@
       
 
       
-        <p>牢记栈的解题原则就是从内到外，所以很多依靠就近原则的问题，如下一个最大数，下一个最小数，括号匹配等问题，都可以考虑使用栈来解决问题。<br>同样这个问题也涉及了vector动态数组容器，map键值对容器！！<br><a id="more"></a></p>
-<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>You are given two arrays (without duplicates) nums1 and nums2 where nums1’s elements are subset of nums2. Find all the next greater numbers for nums1’s elements in the corresponding places of nums2.</p>
+        <p>牢记栈的解题原则就是从内到外，所以很多依靠就近原则的问题，如下一个最大数，下一个最小数，括号匹配等问题，都可以考虑使用栈来解决问题。<br>
+同样这个问题也涉及了vector动态数组容器，map键值对容器！！</p>
+<a id="more"></a>
+<h1>题目描述</h1>
+<p>You are given two arrays (without duplicates) nums1 and nums2 where nums1’s elements are subset of nums2. Find all the next greater numbers for nums1’s elements in the corresponding places of nums2.</p>
 <p>The Next Greater Number of a number x in nums1 is the first greater number to its right in nums2. If it does not exist, output -1 for this number.</p>
-<p><strong>Example 1:</strong><br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Input: nums1 = [<span class="number">4</span>,<span class="number">1</span>,<span class="number">2</span>], nums2 = [<span class="number">1</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">2</span>].</span><br><span class="line">Output: [<span class="number">-1</span>,<span class="number">3</span>,<span class="number">-1</span>]</span><br><span class="line">Explanation:</span><br><span class="line">    For number <span class="number">4</span> <span class="keyword">in</span> the first array, you cannot find the next greater number <span class="keyword">for</span> it <span class="keyword">in</span> the second array, so output <span class="number">-1.</span></span><br><span class="line">    For number <span class="number">1</span> <span class="keyword">in</span> the first array, the next greater number <span class="keyword">for</span> it <span class="keyword">in</span> the second array <span class="keyword">is</span> <span class="number">3.</span></span><br><span class="line">    For number <span class="number">2</span> <span class="keyword">in</span> the first array, there <span class="keyword">is</span> no next greater number <span class="keyword">for</span> it <span class="keyword">in</span> the second array, so output <span class="number">-1.</span></span><br></pre></td></tr></table></figure></p>
-<p><strong>Example 2:</strong><br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Input: nums1 = [<span class="number">2</span>,<span class="number">4</span>], nums2 = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>].</span><br><span class="line">Output: [<span class="number">3</span>,<span class="number">-1</span>]</span><br><span class="line">Explanation:</span><br><span class="line">    For number <span class="number">2</span> <span class="keyword">in</span> the first array, the next greater number <span class="keyword">for</span> it <span class="keyword">in</span> the second array <span class="keyword">is</span> <span class="number">3.</span></span><br><span class="line">    For number <span class="number">4</span> <span class="keyword">in</span> the first array, there <span class="keyword">is</span> no next greater number <span class="keyword">for</span> it <span class="keyword">in</span> the second array, so output <span class="number">-1.</span></span><br></pre></td></tr></table></figure></p>
+<p><strong>Example 1:</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Input: nums1 = [<span class="number">4</span>,<span class="number">1</span>,<span class="number">2</span>], nums2 = [<span class="number">1</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">2</span>].</span><br><span class="line">Output: [<span class="number">-1</span>,<span class="number">3</span>,<span class="number">-1</span>]</span><br><span class="line">Explanation:</span><br><span class="line">    For number <span class="number">4</span> <span class="keyword">in</span> the first array, you cannot find the next greater number <span class="keyword">for</span> it <span class="keyword">in</span> the second array, so output <span class="number">-1.</span></span><br><span class="line">    For number <span class="number">1</span> <span class="keyword">in</span> the first array, the next greater number <span class="keyword">for</span> it <span class="keyword">in</span> the second array <span class="keyword">is</span> <span class="number">3.</span></span><br><span class="line">    For number <span class="number">2</span> <span class="keyword">in</span> the first array, there <span class="keyword">is</span> no next greater number <span class="keyword">for</span> it <span class="keyword">in</span> the second array, so output <span class="number">-1.</span></span><br></pre></td></tr></table></figure>
+<p><strong>Example 2:</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Input: nums1 = [<span class="number">2</span>,<span class="number">4</span>], nums2 = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>].</span><br><span class="line">Output: [<span class="number">3</span>,<span class="number">-1</span>]</span><br><span class="line">Explanation:</span><br><span class="line">    For number <span class="number">2</span> <span class="keyword">in</span> the first array, the next greater number <span class="keyword">for</span> it <span class="keyword">in</span> the second array <span class="keyword">is</span> <span class="number">3.</span></span><br><span class="line">    For number <span class="number">4</span> <span class="keyword">in</span> the first array, there <span class="keyword">is</span> no next greater number <span class="keyword">for</span> it <span class="keyword">in</span> the second array, so output <span class="number">-1.</span></span><br></pre></td></tr></table></figure>
 <p><strong>Note:</strong></p>
 <ol>
 <li>All elements in nums1 and nums2 are unique.</li>
 <li>The length of both nums1 and nums2 would not exceed 1000.</li>
 </ol>
-<h2 id="理解题意"><a href="#理解题意" class="headerlink" title="理解题意"></a>理解题意</h2><p>vector1是vector2的子集，这俩vector大小都不超过1000，且没有重复元素。现在让你找到和vector1中元素大小相等的vector2中的元素，并在vector2中找到下一个比该元素大的元素。<br>如果找不到，就返回一个-1。依此类推，将vector1遍历完毕。</p>
-<h2 id="算法1"><a href="#算法1" class="headerlink" title="算法1"></a>算法1</h2><p>刚开始也不会什么算法，就称之为暴力法吧，循环遍历nums1，内置循环遍历nums2找到和nums1中相等的元素，跳出内循环，在来到另一个内循环，找到比<br>这个元素大的一个元素，把它放到结果vector中。</p>
-<p>代码如下:<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; nextGreaterElement(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; findNums, <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; nums) &#123;</span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; res;</span><br><span class="line">        <span class="keyword">int</span> i , j , k, m;</span><br><span class="line">        <span class="comment">//为下面判断是否在res中添加了元素做判断</span></span><br><span class="line">        m = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(i = <span class="number">0</span> ; i &lt; findNums.size() ; i++)&#123;</span><br><span class="line">            <span class="comment">//找到相等的元素</span></span><br><span class="line">            <span class="keyword">for</span>(j = <span class="number">0</span> ; j &lt; nums.size() ; j++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(findNums[i] == nums[j])&#123;</span><br><span class="line">                    k = j;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">            <span class="comment">//找到下一个较大元素</span></span><br><span class="line">            <span class="keyword">for</span>(j = k + <span class="number">1</span> ; j &lt; nums.size() ; j++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(nums[j] &gt; findNums[i])&#123;</span><br><span class="line">                    res.push_back(nums[j]);</span><br><span class="line">                    m++;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 如果没有找到较大元素,赋值一个-1</span></span><br><span class="line">            <span class="keyword">if</span>(m  == i)&#123;</span><br><span class="line">                res.push_back(<span class="number">-1</span>);</span><br><span class="line">                m++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n1[<span class="number">3</span>] = &#123;<span class="number">4</span>,<span class="number">1</span>,<span class="number">2</span>&#125;;</span><br><span class="line">    <span class="keyword">int</span> n2[<span class="number">4</span>] = &#123;<span class="number">1</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">2</span>&#125;;</span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; nums1(n1 , n1+<span class="number">3</span>);</span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; nums2(n2 , n2+<span class="number">4</span>);</span><br><span class="line">    Solution a;</span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; result = a.nextGreaterElement(nums1 , nums2);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span> ; i&lt; result.size();i++)&#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; result[i] &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="理解题意"><a class="header-anchor" href="#理解题意">¶</a>理解题意</h2>
+<p>vector1是vector2的子集，这俩vector大小都不超过1000，且没有重复元素。现在让你找到和vector1中元素大小相等的vector2中的元素，并在vector2中找到下一个比该元素大的元素。<br>
+如果找不到，就返回一个-1。依此类推，将vector1遍历完毕。</p>
+<h2 id="算法1"><a class="header-anchor" href="#算法1">¶</a>算法1</h2>
+<p>刚开始也不会什么算法，就称之为暴力法吧，循环遍历nums1，内置循环遍历nums2找到和nums1中相等的元素，跳出内循环，在来到另一个内循环，找到比<br>
+这个元素大的一个元素，把它放到结果vector中。</p>
+<p>代码如下:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; nextGreaterElement(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; findNums, <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; nums) &#123;</span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; res;</span><br><span class="line">        <span class="keyword">int</span> i , j , k, m;</span><br><span class="line">        <span class="comment">//为下面判断是否在res中添加了元素做判断</span></span><br><span class="line">        m = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(i = <span class="number">0</span> ; i &lt; findNums.size() ; i++)&#123;</span><br><span class="line">            <span class="comment">//找到相等的元素</span></span><br><span class="line">            <span class="keyword">for</span>(j = <span class="number">0</span> ; j &lt; nums.size() ; j++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(findNums[i] == nums[j])&#123;</span><br><span class="line">                    k = j;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">            <span class="comment">//找到下一个较大元素</span></span><br><span class="line">            <span class="keyword">for</span>(j = k + <span class="number">1</span> ; j &lt; nums.size() ; j++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(nums[j] &gt; findNums[i])&#123;</span><br><span class="line">                    res.push_back(nums[j]);</span><br><span class="line">                    m++;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 如果没有找到较大元素,赋值一个-1</span></span><br><span class="line">            <span class="keyword">if</span>(m  == i)&#123;</span><br><span class="line">                res.push_back(<span class="number">-1</span>);</span><br><span class="line">                m++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n1[<span class="number">3</span>] = &#123;<span class="number">4</span>,<span class="number">1</span>,<span class="number">2</span>&#125;;</span><br><span class="line">    <span class="keyword">int</span> n2[<span class="number">4</span>] = &#123;<span class="number">1</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">2</span>&#125;;</span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; nums1(n1 , n1+<span class="number">3</span>);</span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; nums2(n2 , n2+<span class="number">4</span>);</span><br><span class="line">    Solution a;</span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; result = a.nextGreaterElement(nums1 , nums2);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span> ; i&lt; result.size();i++)&#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; result[i] &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>用时基本在20ms，在同样使用c++的算法中不算快。</p>
-<h2 id="算法2"><a href="#算法2" class="headerlink" title="算法2"></a>算法2</h2><p>想想这道题是在栈的标签内的，那我们考虑下能否用栈来解决问题。想起之前的LeetCode20，匹配括号的那个问题，栈的解题思想就是从内到外解决问题。<br>同样这道题也可以使用这样的思想。</p>
+<h2 id="算法2"><a class="header-anchor" href="#算法2">¶</a>算法2</h2>
+<p>想想这道题是在栈的标签内的，那我们考虑下能否用栈来解决问题。想起之前的LeetCode20，匹配括号的那个问题，栈的解题思想就是从内到外解决问题。<br>
+同样这道题也可以使用这样的思想。</p>
 <p>我们的目的是找到每一个元素对应的下一个最大的元素。</p>
 <p>为此特意学习了一下标准库<strong>map</strong>，这个很好理解，就是以key - value形式存储数据的一个方法。可以理解为一一映射。</p>
 <p>在这里 key 就是我们的nums中每一个元素，对应的value就是其下一个最大的元素。最后组装为我们要的vector就可以了。</p>
@@ -446,46 +458,59 @@
 <li>操作元素2：</li>
 </ol>
 <ul>
-<li><p>栈：[          ]</p>
+<li>
+<p>栈：[          ]</p>
 </li>
-<li><p>为空，则key = 2， value = -1</p>
+<li>
+<p>为空，则key = 2， value = -1</p>
 </li>
-<li><p>将2 入栈</p>
+<li>
+<p>将2 入栈</p>
 </li>
 </ul>
 <ol start="2">
 <li>操作元素4：</li>
 </ol>
 <ul>
-<li><p>栈：[2        ]</p>
+<li>
+<p>栈：[2        ]</p>
 </li>
-<li><p>不为空，栈顶2小于4，弹出2，此时栈又为空</p>
+<li>
+<p>不为空，栈顶2小于4，弹出2，此时栈又为空</p>
 </li>
-<li><p>则key = 4，value = -1</p>
+<li>
+<p>则key = 4，value = -1</p>
 </li>
-<li><p>将4入栈</p>
+<li>
+<p>将4入栈</p>
 </li>
 </ul>
 <ol start="3">
 <li>操作元素3</li>
 </ol>
 <ul>
-<li><p>栈 [4            ]</p>
+<li>
+<p>栈 [4            ]</p>
 </li>
-<li><p>栈顶元素4大于3，则key = 3，value = 4</p>
+<li>
+<p>栈顶元素4大于3，则key = 3，value = 4</p>
 </li>
-<li><p>将3入栈</p>
+<li>
+<p>将3入栈</p>
 </li>
 </ul>
 <ol start="4">
 <li>操作元素1</li>
 </ol>
 <ul>
-<li><p>栈 [4 ,3 ]</p>
+<li>
+<p>栈 [4 ,3 ]</p>
 </li>
-<li><p>栈顶元素3大于1，则key = 1，value = 3</p>
+<li>
+<p>栈顶元素3大于1，则key = 1，value = 3</p>
 </li>
-<li><p>将1入栈</p>
+<li>
+<p>将1入栈</p>
 </li>
 </ul>
 <p>我们就得到了一个<strong>map：</strong></p>
@@ -493,7 +518,8 @@
 3 : 4,
 4 : -1,
 2 : -1
-</code></pre><p>再将其组装成vector即可</p>
+</code></pre>
+<p>再将其组装成vector即可</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;map&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stack&gt;</span></span></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">1.push_back 在数组的最后添加一个数据</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">2.pop_back 去掉数组的最后一个数据</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">3.at 得到编号位置的数据</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">4.begin 得到数组头的指针</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">5.end 得到数组的最后一个单元+1的指针</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">6．front 得到数组头的引用</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">7.back 得到数组的最后一个单元的引用</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">8.max_size 得到vector最大可以是多大</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">9.capacity 当前vector分配的大小</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">10.size 当前使用数据的大小</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">11.resize 改变当前使用数据的大小，如果它比当前使用的大，者填充默认值</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">12.reserve 改变当前vecotr所分配空间的大小</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">13.erase 删除指针指向的数据项</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">14.clear 清空当前的vector</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">15.rbegin 将vector反转后的开始指针返回(其实就是原来的end-1)</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">16.rend 将vector反转构的结束指针返回(其实就是原来的begin-1)</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">17.empty 判断vector是否为空</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">18.swap 与另一个vector交换数据</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; nextGreaterElement(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; findNums, <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; nums) &#123;</span><br><span class="line">        <span class="comment">//返回结果的vector</span></span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; res;</span><br><span class="line">        <span class="built_in">stack</span>&lt;<span class="keyword">int</span>&gt; s;</span><br><span class="line">        <span class="comment">//key是nums中的每一个元素，value是该元素对应的下一个最大值，如果没有则对应的是1</span></span><br><span class="line">        <span class="built_in">map</span>&lt;<span class="keyword">int</span>,<span class="keyword">int</span>&gt; m;</span><br><span class="line">        <span class="comment">//开始反向入栈</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = nums.size() - <span class="number">1</span>;i &gt;= <span class="number">0</span> ; i--)&#123;</span><br><span class="line">            <span class="comment">//当栈非空，且栈顶元素小于当前要入栈的元素时，就把栈顶元素弹出</span></span><br><span class="line">            <span class="comment">//其实就是要保证当前栈顶元素为你要找的那个下一个最大元素</span></span><br><span class="line">            <span class="keyword">while</span>(!s.empty() &amp;&amp; s.top() &lt; nums[i])&#123;</span><br><span class="line">                s.pop();</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">//找到以后，我们就把他存入map中</span></span><br><span class="line">            m[nums[i]] = s.empty() ? <span class="number">-1</span> : s.top();</span><br><span class="line">            <span class="comment">//将新元素入栈</span></span><br><span class="line">            s.push(nums[i]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//我们得到的map是nums中每一个元素以及它对应的下一个最大元素构成的映射</span></span><br><span class="line">        <span class="comment">//将映射组装成vector</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i&lt;findNums.size();i++)&#123;</span><br><span class="line">            res.push_back(m[findNums[i]]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n1[<span class="number">3</span>] = &#123;<span class="number">4</span>,<span class="number">1</span>,<span class="number">2</span>&#125;;</span><br><span class="line">    <span class="keyword">int</span> n2[<span class="number">4</span>] = &#123;<span class="number">1</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">2</span>&#125;;</span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; nums1(n1 , n1+<span class="number">3</span>);</span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; nums2(n2 , n2+<span class="number">4</span>);</span><br><span class="line">    Solution a;</span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; result = a.nextGreaterElement(nums1 , nums2);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span> ; i&lt; result.size();i++)&#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; result[i] &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>执行用时: 8 ms, 在Next Greater Element I的C++提交中击败了99.07% 的用户！！</p>
 
@@ -567,6 +593,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2018/10/14/LeetCode682/" rel="prev" title="LeetCode682">
+                LeetCode682 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -639,7 +669,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -689,7 +719,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">8</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -771,7 +805,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#题目描述"><span class="nav-number">1.</span> <span class="nav-text">题目描述</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#理解题意"><span class="nav-number">1.1.</span> <span class="nav-text">理解题意</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#算法1"><span class="nav-number">1.2.</span> <span class="nav-text">算法1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#算法2"><span class="nav-number">1.3.</span> <span class="nav-text">算法2</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">题目描述</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#理解题意"><span class="nav-number">1.1.</span> <span class="nav-text">¶理解题意</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#算法1"><span class="nav-number">1.2.</span> <span class="nav-text">¶算法1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#算法2"><span class="nav-number">1.3.</span> <span class="nav-text">¶算法2</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -821,7 +855,7 @@
   <span class="post-meta-divider">|</span>
   <div class="theme-info">
     <div class="powered-by"></div>
-    <span class="post-count">博客全站共8k字</span>
+    <span class="post-count">博客全站共8.5k字</span>
   </div>
 
 
