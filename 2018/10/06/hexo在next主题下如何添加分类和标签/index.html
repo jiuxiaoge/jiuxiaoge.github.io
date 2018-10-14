@@ -376,7 +376,7 @@
             
               <span class="post-letters-count">
               &nbsp; | &nbsp;
-              <span>730 字</span>
+              <span>729 字</span>
               &nbsp; | &nbsp;
               <span>2 min</span>
               </span>
@@ -425,13 +425,9 @@
       
 
       
-        <p>简单记录一下在hexo的next主题下如何添加分类和标签。</p>
-<a id="more"></a>
-<h1>如何在next主题下添加分类和标签</h1>
-<p>要想写博客，分类和标签是必不可少的，那么我们怎么在<strong>hexo</strong>中的==next==主题下进行添加分类和标签的操作呢？</p>
-<h3 id="环境"><a class="header-anchor" href="#环境">¶</a>环境</h3>
-<h4 id="hexo"><a class="header-anchor" href="#hexo">¶</a>hexo</h4>
-<ul>
+        <p>简单记录一下在hexo的next主题下如何添加分类和标签。<br><a id="more"></a></p>
+<h1 id="如何在next主题下添加分类和标签"><a href="#如何在next主题下添加分类和标签" class="headerlink" title="如何在next主题下添加分类和标签"></a>如何在next主题下添加分类和标签</h1><p>要想写博客，分类和标签是必不可少的，那么我们怎么在<strong>hexo</strong>中的==next==主题下进行添加分类和标签的操作呢？</p>
+<h3 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h3><h4 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h4><ul>
 <li>hexo: 3.7.1</li>
 <li>hexo-cli: 1.1.0</li>
 <li>os: Windows_NT 10.0.17134 win32 x64</li>
@@ -448,68 +444,52 @@
 <li>icu: 60.1</li>
 <li>unicode: 10.0</li>
 <li>cldr: 32.0</li>
-<li>tz: 2017c</li>
+<li>tz: 2017c<h4 id="next"><a href="#next" class="headerlink" title="next"></a>next</h4></li>
+<li>next: 6.0.0<h3 id="添加分类和标签"><a href="#添加分类和标签" class="headerlink" title="添加分类和标签"></a>添加分类和标签</h3><a href="http://theme-next.iissnan.com/theme-settings.html" target="_blank" rel="noopener">参考官方文档</a><h4 id="添加分类页面"><a href="#添加分类页面" class="headerlink" title="添加分类页面"></a>添加分类页面</h4></li>
 </ul>
-<h4 id="next"><a class="header-anchor" href="#next">¶</a>next</h4>
-<ul>
-<li>next: 6.0.0</li>
-</ul>
-<h3 id="添加分类和标签"><a class="header-anchor" href="#添加分类和标签">¶</a>添加分类和标签</h3>
-<p><a href="http://theme-next.iissnan.com/theme-settings.html" target="_blank" rel="noopener">参考官方文档</a></p>
-<h4 id="添加分类页面"><a class="header-anchor" href="#添加分类页面">¶</a>添加分类页面</h4>
 <ol>
-<li>新建页面</li>
+<li>新建页面<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> your-hexo-site</span><br><span class="line">$ hexo new page categories</span><br></pre></td></tr></table></figure>
+</li>
 </ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> your-hexo-site</span><br><span class="line">$ hexo new page categories</span><br></pre></td></tr></table></figure>
 <p>在终端窗口下，定位到 <strong>Hexo</strong> 站点目录下。使用 hexo new page 新建一个页面，命名为 ==categories==</p>
 <ol start="2">
-<li>设置页面类型<br>
-编辑刚新建的页面，将页面的 type 设置为 categories ，主题将自动为这个页面显示分类。页面内容如下：</li>
-</ol>
+<li><p>设置页面类型<br>编辑刚新建的页面，将页面的 type 设置为 categories ，主题将自动为这个页面显示分类。页面内容如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">title: 分类</span><br><span class="line">date: 2018-10-6 12:39:04</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<ol start="3">
-<li>修改菜单<br>
-在菜单中添加链接。编辑 ==主题配置文件== ， 添加 categories 到 menu 中，如下:</li>
-</ol>
+</li>
+<li><p>修改菜单<br>在菜单中添加链接。编辑 ==主题配置文件== ， 添加 categories 到 menu 中，如下:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: <span class="regexp">/</span></span><br><span class="line"><span class="regexp">  archives: /</span>archives</span><br><span class="line">  categories: <span class="regexp">/categories</span></span><br></pre></td></tr></table></figure>
-<h4 id="添加标签页面"><a class="header-anchor" href="#添加标签页面">¶</a>添加标签页面</h4>
-<ol>
-<li>新建页面</li>
+</li>
 </ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> your-hexo-site</span><br><span class="line">$ hexo new page tags</span><br></pre></td></tr></table></figure>
+<h4 id="添加标签页面"><a href="#添加标签页面" class="headerlink" title="添加标签页面"></a>添加标签页面</h4><ol>
+<li>新建页面<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> your-hexo-site</span><br><span class="line">$ hexo new page tags</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
 <p>在终端窗口下，定位到 <strong>Hexo</strong> 站点目录下。使用 hexo new page 新建一个页面，命名为 ==categories==</p>
 <ol start="2">
-<li>设置页面类型<br>
-编辑刚新建的页面，将页面的 type 设置为 categories ，主题将自动为这个页面显示分类。页面内容如下：</li>
-</ol>
+<li><p>设置页面类型<br>编辑刚新建的页面，将页面的 type 设置为 categories ，主题将自动为这个页面显示分类。页面内容如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">title: 标签</span><br><span class="line">date: 2018-10-6 12:39:04</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<ol start="3">
-<li>修改菜单<br>
-在菜单中添加链接。编辑 ==主题配置文件== ， 添加 categories 到 menu 中，如下:</li>
-</ol>
+</li>
+<li><p>修改菜单<br>在菜单中添加链接。编辑 ==主题配置文件== ， 添加 categories 到 menu 中，如下:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: <span class="regexp">/</span></span><br><span class="line"><span class="regexp">  archives: /</span>archives</span><br><span class="line">  tags: <span class="regexp">/tags</span></span><br></pre></td></tr></table></figure>
-<h3 id="创建模板"><a class="header-anchor" href="#创建模板">¶</a>创建模板</h3>
-<p>在编写md文件时如果总是要填写上述步骤很麻烦，所以建立一个模板时最好的选择，这个模板就在</p>
+</li>
+</ol>
+<h3 id="创建模板"><a href="#创建模板" class="headerlink" title="创建模板"></a>创建模板</h3><p>在编写md文件时如果总是要填写上述步骤很麻烦，所以建立一个模板时最好的选择，这个模板就在</p>
 <blockquote>
-<p>\scaffolds\<a href="http://post.md" target="_blank" rel="noopener">post.md</a></p>
+<p>\scaffolds\post.md</p>
 </blockquote>
-<p>我们只需要修改里面的内容就行了，先看一下<a href="https://hexo.io/zh-cn/docs/front-matter.html#%E5%88%86%E7%B1%BB%E5%92%8C%E6%A0%87%E7%AD%BE" target="_blank" rel="noopener">官方文档</a>在这里都规定了什么变量,我们进行添加就行了。<br>
-我使用的模板：</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">categories:</span><br><span class="line">tags:</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>我们只需要修改里面的内容就行了，先看一下<a href="https://hexo.io/zh-cn/docs/front-matter.html#%E5%88%86%E7%B1%BB%E5%92%8C%E6%A0%87%E7%AD%BE" target="_blank" rel="noopener">官方文档</a>在这里都规定了什么变量,我们进行添加就行了。<br>我使用的模板：<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">categories:</span><br><span class="line">tags:</span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
 <ul>
 <li>title是文章标题</li>
 <li>data是编写日期。这两个都会自动生成(如果使用命令行创建md文件的话)</li>
 <li>categories中填写分类</li>
 <li>tags中填写标签</li>
 </ul>
-<p>例如我使用命令行：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo n <span class="string">"hexo在next主题下如何添加分类和标签"</span></span><br></pre></td></tr></table></figure>
+<p>例如我使用命令行：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo n <span class="string">"hexo在next主题下如何添加分类和标签"</span></span><br></pre></td></tr></table></figure></p>
 <p>就会在</p>
 <blockquote>
 <p>\source_posts</p>
 </blockquote>
-<p>目录下生成一个<strong>hexo在next主题下如何添加分类和标签</strong>的md文件，显示如下</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: hexo在next主题下如何添加分类和标签</span><br><span class="line">date: 2018-10-06 22:38:18</span><br><span class="line">categories:</span><br><span class="line"><span class="bullet">- </span>前端</span><br><span class="line">  - 搭建博客</span><br><span class="line">tags:</span><br><span class="line"><span class="bullet">- </span>搭建博客</span><br><span class="line"><span class="bullet">- </span>前端</span><br><span class="line"><span class="bullet">- </span>next</span><br><span class="line"><span class="bullet">- </span>备忘</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>目录下生成一个<strong>hexo在next主题下如何添加分类和标签</strong>的md文件，显示如下<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: hexo在next主题下如何添加分类和标签</span><br><span class="line">date: 2018-10-06 22:38:18</span><br><span class="line">categories:</span><br><span class="line"><span class="bullet">- </span>前端</span><br><span class="line">  - 搭建博客</span><br><span class="line">tags:</span><br><span class="line"><span class="bullet">- </span>搭建博客</span><br><span class="line"><span class="bullet">- </span>前端</span><br><span class="line"><span class="bullet">- </span>next</span><br><span class="line"><span class="bullet">- </span>备忘</span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
 <p>随便写点信息，刷新一下hexo，部署一下，在我们的博客上就会看到我们新写的文章了。</p>
 
       
@@ -660,7 +640,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">8</span>
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -681,7 +661,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">4</span>
+                      
+                    
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -714,7 +696,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">10</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">12</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -796,7 +782,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">如何在next主题下添加分类和标签</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#环境"><span class="nav-number">1.0.1.</span> <span class="nav-text">¶环境</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#hexo"><span class="nav-number">1.0.1.1.</span> <span class="nav-text">¶hexo</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#next"><span class="nav-number">1.0.1.2.</span> <span class="nav-text">¶next</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加分类和标签"><span class="nav-number">1.0.2.</span> <span class="nav-text">¶添加分类和标签</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#添加分类页面"><span class="nav-number">1.0.2.1.</span> <span class="nav-text">¶添加分类页面</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#添加标签页面"><span class="nav-number">1.0.2.2.</span> <span class="nav-text">¶添加标签页面</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建模板"><span class="nav-number">1.0.3.</span> <span class="nav-text">¶创建模板</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#如何在next主题下添加分类和标签"><span class="nav-number">1.</span> <span class="nav-text">如何在next主题下添加分类和标签</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#环境"><span class="nav-number">1.0.1.</span> <span class="nav-text">环境</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#hexo"><span class="nav-number">1.0.1.1.</span> <span class="nav-text">hexo</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#next"><span class="nav-number">1.0.1.2.</span> <span class="nav-text">next</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加分类和标签"><span class="nav-number">1.0.2.</span> <span class="nav-text">添加分类和标签</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#添加分类页面"><span class="nav-number">1.0.2.1.</span> <span class="nav-text">添加分类页面</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#添加标签页面"><span class="nav-number">1.0.2.2.</span> <span class="nav-text">添加标签页面</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建模板"><span class="nav-number">1.0.3.</span> <span class="nav-text">创建模板</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -846,7 +832,7 @@
   <span class="post-meta-divider">|</span>
   <div class="theme-info">
     <div class="powered-by"></div>
-    <span class="post-count">博客全站共8.5k字</span>
+    <span class="post-count">博客全站共9.4k字</span>
   </div>
 
 
