@@ -115,24 +115,25 @@
 
 
 
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="今天的题比较简单，无非是利用栈，加上几个条件判断，速度也很快。">
+<meta name="keywords" content="算法,LeetCode,stack">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2018/10/03/hello-world/index.html">
+<meta property="og:title" content="【LeetCode】Day6 Backspace String Compare">
+<meta property="og:url" content="http://yoursite.com/2018/10/15/LeetCode844/index.html">
 <meta property="og:site_name" content="沈徒一">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="今天的题比较简单，无非是利用栈，加上几个条件判断，速度也很快。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-10-03T14:21:41.914Z">
+<meta property="og:updated_time" content="2018-10-15T07:24:49.075Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="【LeetCode】Day6 Backspace String Compare">
+<meta name="twitter:description" content="今天的题比较简单，无非是利用栈，加上几个条件判断，速度也很快。">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/10/03/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/10/15/LeetCode844/"/>
 
 
 
@@ -142,7 +143,7 @@
   };
 </script>
 
-  <title>Hello World | 沈徒一</title>
+  <title>【LeetCode】Day6 Backspace String Compare | 沈徒一</title>
   
 
 
@@ -310,7 +311,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/03/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/15/LeetCode844/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="沈徒一">
@@ -327,7 +328,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World
+          <h1 class="post-title" itemprop="name headline">【LeetCode】Day6 Backspace String Compare
               
             
           </h1>
@@ -352,20 +353,49 @@
                 
               
 
-              <time title="创建时间：2018-10-03 22:21:41" itemprop="dateCreated datePublished" datetime="2018-10-03T22:21:41+08:00">2018-10-03</time>
+              <time title="创建时间：2018-10-15 15:07:02 / 修改时间：15:24:49" itemprop="dateCreated datePublished" datetime="2018-10-15T15:07:02+08:00">2018-10-15</time>
             
 
+            
+              
+
+              
             
             
               <span class="post-letters-count">
               &nbsp; | &nbsp;
-              <span>73 字</span>
+              <span>558 字</span>
               &nbsp; | &nbsp;
-              <span>1 min</span>
+              <span>2 min</span>
               </span>
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/算法/" itemprop="url" rel="index"><span itemprop="name">算法</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/算法/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -390,15 +420,31 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <p>今天的题比较简单，无非是利用栈，加上几个条件判断，速度也很快。<br><a id="more"></a></p>
+<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>Given two strings S and T, return if they are equal when both are typed into empty text editors. # means a backspace character.</p>
+<p><strong>Example1:</strong><br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Input: S = <span class="string">"ab#c"</span>, T = <span class="string">"ad#c"</span></span><br><span class="line">Output: true</span><br><span class="line">Explanation: Both S <span class="keyword">and</span> T become <span class="string">"ac"</span>.</span><br></pre></td></tr></table></figure></p>
+<p><strong>Example2:</strong><br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Input: S = <span class="string">"ab##"</span>, T = <span class="string">"c#d#"</span></span><br><span class="line">Output: true</span><br><span class="line">Explanation: Both S <span class="keyword">and</span> T become <span class="string">""</span>.</span><br></pre></td></tr></table></figure></p>
+<p><strong>Example3:</strong><br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Input: S = <span class="string">"a##c"</span>, T = <span class="string">"#a#c"</span></span><br><span class="line">Output: true</span><br><span class="line">Explanation: Both S <span class="keyword">and</span> T become <span class="string">"c"</span>.</span><br></pre></td></tr></table></figure></p>
+<p><strong>Example4:</strong><br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Input: S = <span class="string">"a#c"</span>, T = <span class="string">"b"</span></span><br><span class="line">Output: false</span><br><span class="line">Explanation: S becomes <span class="string">"c"</span> <span class="keyword">while</span> T becomes <span class="string">"b"</span>.</span><br></pre></td></tr></table></figure></p>
+<p><strong>Note</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1 &lt;= S.length &lt;= 200</span><br><span class="line"></span><br><span class="line">1 &lt;= T.length &lt;= 200</span><br><span class="line"></span><br><span class="line">S and T only contain lowercase letters and &apos;#&apos; characters.</span><br></pre></td></tr></table></figure></p>
+<p><strong>Follow up:</strong></p>
+<p>Can you solve it in O(N) time and O(1) space?</p>
+<h2 id="题目描述-1"><a href="#题目描述-1" class="headerlink" title="题目描述"></a>题目描述</h2><p>输入两个字符串，仅有小写字母和#，遇到#则删除上一个元素，操作完毕以后，比较两个字符串，相等反回true，否则返回false</p>
+<h2 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h2><p>很简单，将两个元素分别入栈，在入栈时，</p>
+<ul>
+<li>如果栈不为空且输入的字符为#，则弹出上一个字符</li>
+<li>如果栈为空且输入的字符为#，则不做任何操作</li>
+<li>其他情况正常压入元素</li>
+</ul>
+<p>接下来进行比较两个字符串</p>
+<ul>
+<li>如果两个栈都为空，返回true</li>
+<li>如果两个栈的大小不相等，返回false</li>
+<li>如果两个栈的大小相等，开始循环比较两个栈，如果栈顶不相等，返回false</li>
+<li>如果栈顶相等，且栈不为空，就弹出两个栈的栈顶元素</li>
+<li>如果栈为空，返回true</li>
+</ul>
+<p>直接看代码<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stack&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">stack</span>&lt;<span class="keyword">char</span>&gt; s1;</span><br><span class="line">    <span class="built_in">stack</span>&lt;<span class="keyword">char</span>&gt; s2;</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">backspaceCompare</span><span class="params">(<span class="built_in">string</span> S, <span class="built_in">string</span> T)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; S[i] != <span class="string">'\0'</span>;i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(S[i] != <span class="string">'#'</span>)&#123;</span><br><span class="line">                s1.push(S[i]);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span>&#123;</span><br><span class="line">                <span class="keyword">if</span>(!s1.empty())&#123;</span><br><span class="line">                    s1.pop();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; T[i] != <span class="string">'\0'</span>;i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(T[i] != <span class="string">'#'</span>)&#123;</span><br><span class="line">                s2.push(T[i]);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span>&#123;</span><br><span class="line">                <span class="keyword">if</span>(!s2.empty())&#123;</span><br><span class="line">                    s2.pop();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(s1.empty() &amp;&amp; s2.empty())&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(s1.size() != s2.size())&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span> ; !s1.empty() ;i++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(s1.top() != s2.top())&#123;</span><br><span class="line">                    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">else</span>&#123;</span><br><span class="line">                    s1.pop();</span><br><span class="line">                    s2.pop();</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">if</span>(s1.empty() || s2.empty())&#123;</span><br><span class="line">                    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Solution s;</span><br><span class="line">    <span class="built_in">string</span> a = <span class="string">"xywrrmp"</span>;</span><br><span class="line">    <span class="built_in">string</span> b = <span class="string">"xywrrmu#p"</span>;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; s.backspaceCompare(a , b) &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"Hello world!"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -441,6 +487,16 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/算法/" rel="tag"># 算法</a>
+          
+            <a href="/tags/LeetCode/" rel="tag"># LeetCode</a>
+          
+            <a href="/tags/stack/" rel="tag"># stack</a>
+          
+        </div>
+      
 
       
       
@@ -450,15 +506,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/10/14/JavaScript的基础知识补充学习/" rel="next" title="JavaScript基础知识补充学习笔记">
+                <i class="fa fa-chevron-left"></i> JavaScript基础知识补充学习笔记
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/10/06/hexo在next主题下如何添加分类和标签/" rel="prev" title="hexo在next主题下如何添加分类和标签">
-                hexo在next主题下如何添加分类和标签 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -674,7 +730,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#题目描述"><span class="nav-number">1.</span> <span class="nav-text">题目描述</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#题目描述-1"><span class="nav-number">1.1.</span> <span class="nav-text">题目描述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#算法"><span class="nav-number">1.2.</span> <span class="nav-text">算法</span></a></li></ol></li></ol></div>
             
 
           </div>
