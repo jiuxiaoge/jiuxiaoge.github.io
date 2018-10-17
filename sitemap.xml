@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2018/10/17/LeetCode21/</loc>
+    
+    <lastmod>2018-10-17T11:24:03.409Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2018/10/16/LeetCode703/</loc>
     
     <lastmod>2018-10-16T09:09:28.387Z</lastmod>
