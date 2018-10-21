@@ -115,25 +115,28 @@
 
 
 
-  <meta name="description" content="学习数据结构中有关优先队列，堆的知识，并使用优先队列完成了LeetCode703的找出第K大的元素这道题。">
-<meta name="keywords" content="优先队列">
+  <meta name="description" content="填坑，数组的计算另一个常用的方法，广播。">
+<meta name="keywords" content="python,NumPy">
 <meta property="og:type" content="article">
-<meta property="og:title" content="【LeetCode】Day7 Kth Largest Element in a Stream">
-<meta property="og:url" content="http://yoursite.com/2018/10/16/LeetCode703/index.html">
+<meta property="og:title" content="python填坑 数组的计算：广播">
+<meta property="og:url" content="http://yoursite.com/2018/10/21/python填坑-数组的计算：广播/index.html">
 <meta property="og:site_name" content="沈徒一">
-<meta property="og:description" content="学习数据结构中有关优先队列，堆的知识，并使用优先队列完成了LeetCode703的找出第K大的元素这道题。">
+<meta property="og:description" content="填坑，数组的计算另一个常用的方法，广播。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-10-16T09:09:28.387Z">
+<meta property="og:image" content="https://img-blog.csdn.net/20181021175933207?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTI1OTIxMQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:image" content="https://img-blog.csdn.net/20181021175953175?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTI1OTIxMQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:updated_time" content="2018-10-21T10:03:33.323Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="【LeetCode】Day7 Kth Largest Element in a Stream">
-<meta name="twitter:description" content="学习数据结构中有关优先队列，堆的知识，并使用优先队列完成了LeetCode703的找出第K大的元素这道题。">
+<meta name="twitter:title" content="python填坑 数组的计算：广播">
+<meta name="twitter:description" content="填坑，数组的计算另一个常用的方法，广播。">
+<meta name="twitter:image" content="https://img-blog.csdn.net/20181021175933207?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTI1OTIxMQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/10/16/LeetCode703/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/10/21/python填坑-数组的计算：广播/"/>
 
 
 
@@ -143,7 +146,7 @@
   };
 </script>
 
-  <title>【LeetCode】Day7 Kth Largest Element in a Stream | 沈徒一</title>
+  <title>python填坑 数组的计算：广播 | 沈徒一</title>
   
 
 
@@ -311,7 +314,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/16/LeetCode703/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/21/python填坑-数组的计算：广播/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="沈徒一">
@@ -328,7 +331,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">【LeetCode】Day7 Kth Largest Element in a Stream
+          <h1 class="post-title" itemprop="name headline">python填坑 数组的计算：广播
               
             
           </h1>
@@ -353,7 +356,7 @@
                 
               
 
-              <time title="创建时间：2018-10-16 16:28:30 / 修改时间：17:09:28" itemprop="dateCreated datePublished" datetime="2018-10-16T16:28:30+08:00">2018-10-16</time>
+              <time title="创建时间：2018-10-21 18:02:06 / 修改时间：18:03:33" itemprop="dateCreated datePublished" datetime="2018-10-21T18:02:06+08:00">2018-10-21</time>
             
 
             
@@ -364,9 +367,9 @@
             
               <span class="post-letters-count">
               &nbsp; | &nbsp;
-              <span>459 字</span>
+              <span>695 字</span>
               &nbsp; | &nbsp;
-              <span>2 min</span>
+              <span>3 min</span>
               </span>
             
           </span>
@@ -383,14 +386,14 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/算法/" itemprop="url" rel="index"><span itemprop="name">算法</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/数据科学/" itemprop="url" rel="index"><span itemprop="name">数据科学</span></a></span>
 
                 
                 
                   ，
                 
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/算法/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/数据科学/语言基础/" itemprop="url" rel="index"><span itemprop="name">语言基础</span></a></span>
 
                 
                 
@@ -420,14 +423,116 @@
       
 
       
-        <p>学习数据结构中有关优先队列，堆的知识，并使用优先队列完成了LeetCode703的找出第K大的元素这道题。<br><a id="more"></a></p>
-<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>Design a class to find the kth largest element in a stream. Note that it is the kth largest element in the sorted order, not the kth distinct element.</p>
-<p>Your KthLargest class will have a constructor which accepts an integer k and an integer array nums, which contains initial elements from the stream. For each call to the method KthLargest.add, return the element representing the kth largest element in the stream.</p>
-<p><strong>Example：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">int k = 3;</span><br><span class="line">int[] arr = [4,5,8,2];</span><br><span class="line">KthLargest kthLargest = new KthLargest(3, arr);</span><br><span class="line">kthLargest.add(3);   // returns 4</span><br><span class="line">kthLargest.add(5);   // returns 5</span><br><span class="line">kthLargest.add(10);  // returns 5</span><br><span class="line">kthLargest.add(9);   // returns 8</span><br><span class="line">kthLargest.add(4);   // returns 8</span><br></pre></td></tr></table></figure></p>
-<h2 id="理解题意"><a href="#理解题意" class="headerlink" title="理解题意"></a>理解题意</h2><p>设计一个找到数据流中第K大元素的类（class）。注意是排序后的第K大元素，不是第K个不同的元素。</p>
-<p>你的 KthLargest 类需要一个同时接收整数 k 和整数数组nums 的构造器，它包含数据流中的初始元素。每次调用 KthLargest.add，返回当前数据流中第K大的元素。</p>
-<h2 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h2><p>使用一个优先队列，排序方法为降序排列，然后开始压入元素。如果压入元素以后，队列的大小大于k，那么就弹出队尾的元素。这样做的目的是保证队列始终大小为k，且由于是优先队列，这样队列的值就是前k个最大的数，然后返回队尾元素即可。</p>
-<p>直接看代码<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">KthLargest</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    priority_queue&lt;<span class="keyword">int</span>, <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;, greater&lt;<span class="keyword">int</span>&gt; &gt; p;</span><br><span class="line">    <span class="keyword">int</span> max_len;</span><br><span class="line">    KthLargest(<span class="keyword">int</span> k, <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; nums) &#123;</span><br><span class="line">        max_len = k;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>;i&lt;nums.size();i++)&#123;</span><br><span class="line">            p.push(nums[i]);</span><br><span class="line">            <span class="keyword">if</span>(p.size() &gt; max_len)&#123;</span><br><span class="line">                p.pop();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span> val)</span> </span>&#123;</span><br><span class="line">        p.push(val);</span><br><span class="line">        <span class="keyword">if</span>(p.size() &gt; max_len)&#123;</span><br><span class="line">            p.pop();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> p.top();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Your KthLargest object will be instantiated and called as such:</span></span><br><span class="line"><span class="comment"> * KthLargest obj = new KthLargest(k, nums);</span></span><br><span class="line"><span class="comment"> * int param_1 = obj.add(val);</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure></p>
+        <p>填坑，数组的计算另一个常用的方法，广播。<br><a id="more"></a></p>
+<h1 id="数组的计算：-广播"><a href="#数组的计算：-广播" class="headerlink" title="数组的计算： 广播"></a>数组的计算： 广播</h1><h2 id="广播的介绍"><a href="#广播的介绍" class="headerlink" title="广播的介绍"></a>广播的介绍</h2><p>广播 可以简单理解为用于不同大小数组的二进制通用函数（加，减，乘）的一组规则。</p>
+<p>下面的这个图可以便于我们理解</p>
+<p><img src="https://img-blog.csdn.net/20181021175933207?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTI1OTIxMQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="image.png"></p>
+<p>图中灰色的部分实际上并没有在内存中真正拓展，只是为了便于理解而画出</p>
+<h2 id="广播的实际应用"><a href="#广播的实际应用" class="headerlink" title="广播的实际应用"></a>广播的实际应用</h2><h3 id="数组的归一化"><a href="#数组的归一化" class="headerlink" title="数组的归一化"></a>数组的归一化</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">x = np.random.random((<span class="number">10</span>,<span class="number">3</span>));</span><br><span class="line">print(x);</span><br></pre></td></tr></table></figure>
+<pre><code>[[0.265947   0.40127941 0.36178462]
+ [0.83731325 0.35726977 0.98721264]
+ [0.20947751 0.08385983 0.6712555 ]
+ [0.98340929 0.2925629  0.93276599]
+ [0.05175861 0.9508014  0.20215262]
+ [0.97337293 0.4817447  0.16318914]
+ [0.93380788 0.24284916 0.78443306]
+ [0.90522181 0.80584462 0.28076412]
+ [0.71291843 0.6302203  0.7799052 ]
+ [0.98692271 0.33222769 0.70652787]]
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">xmean = x.mean(axis=<span class="number">0</span>); <span class="comment"># 按列聚合求均值</span></span><br><span class="line">print(xmean)</span><br></pre></td></tr></table></figure>
+<pre><code>[0.68601494 0.45786598 0.58699908]
+</code></pre><p>现在通过减去这个均值实现归一化，就利用到了广播</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x_centered = x - xmean;</span><br><span class="line">print(x_centered)</span><br></pre></td></tr></table></figure>
+<pre><code>[[-0.42006794 -0.05658657 -0.22521446]
+ [ 0.15129831 -0.10059621  0.40021357]
+ [-0.47653743 -0.37400615  0.08425643]
+ [ 0.29739435 -0.16530308  0.34576692]
+ [-0.63425633  0.49293542 -0.38484646]
+ [ 0.28735798  0.02387872 -0.42380994]
+ [ 0.24779294 -0.21501681  0.19743398]
+ [ 0.21920687  0.34797865 -0.30623495]
+ [ 0.02690349  0.17235432  0.19290612]
+ [ 0.30090777 -0.12563829  0.11952879]]
+</code></pre><p>通过看归一化数组的均值是否接近于0 判断归一化是否正确</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(x_centered.mean(axis=<span class="number">0</span>)); <span class="comment"># 很接近0</span></span><br></pre></td></tr></table></figure>
+<pre><code>[-2.22044605e-17  4.44089210e-17 -3.33066907e-17]
+</code></pre><h3 id="画一个二维数组"><a href="#画一个二维数组" class="headerlink" title="画一个二维数组"></a>画一个二维数组</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># x y 分别是0到5区间内50个步长的序列</span></span><br><span class="line">x = np.linspace(<span class="number">0</span>, <span class="number">5</span>, <span class="number">50</span>);</span><br><span class="line">y = x[:, np.newaxis];</span><br><span class="line">print(x)</span><br><span class="line">print(y)</span><br></pre></td></tr></table></figure>
+<pre><code>[0.         0.10204082 0.20408163 0.30612245 0.40816327 0.51020408
+ 0.6122449  0.71428571 0.81632653 0.91836735 1.02040816 1.12244898
+ 1.2244898  1.32653061 1.42857143 1.53061224 1.63265306 1.73469388
+ 1.83673469 1.93877551 2.04081633 2.14285714 2.24489796 2.34693878
+ 2.44897959 2.55102041 2.65306122 2.75510204 2.85714286 2.95918367
+ 3.06122449 3.16326531 3.26530612 3.36734694 3.46938776 3.57142857
+ 3.67346939 3.7755102  3.87755102 3.97959184 4.08163265 4.18367347
+ 4.28571429 4.3877551  4.48979592 4.59183673 4.69387755 4.79591837
+ 4.89795918 5.        ]
+[[0.        ]
+ [0.10204082]
+ [0.20408163]
+ [0.30612245]
+ [0.40816327]
+ [0.51020408]
+ [0.6122449 ]
+ [0.71428571]
+ [0.81632653]
+ [0.91836735]
+ [1.02040816]
+ [1.12244898]
+ [1.2244898 ]
+ [1.32653061]
+ [1.42857143]
+ [1.53061224]
+ [1.63265306]
+ [1.73469388]
+ [1.83673469]
+ [1.93877551]
+ [2.04081633]
+ [2.14285714]
+ [2.24489796]
+ [2.34693878]
+ [2.44897959]
+ [2.55102041]
+ [2.65306122]
+ [2.75510204]
+ [2.85714286]
+ [2.95918367]
+ [3.06122449]
+ [3.16326531]
+ [3.26530612]
+ [3.36734694]
+ [3.46938776]
+ [3.57142857]
+ [3.67346939]
+ [3.7755102 ]
+ [3.87755102]
+ [3.97959184]
+ [4.08163265]
+ [4.18367347]
+ [4.28571429]
+ [4.3877551 ]
+ [4.48979592]
+ [4.59183673]
+ [4.69387755]
+ [4.79591837]
+ [4.89795918]
+ [5.        ]]
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">z = np.sin(x) ** <span class="number">10</span> + np.cos(<span class="number">10</span> + y * x) * np.cos(x)</span><br><span class="line">print(z)</span><br></pre></td></tr></table></figure>
+<pre><code>[[-0.83907153 -0.83470697 -0.8216586  ...  0.8956708   0.68617261
+   0.41940746]
+ [-0.83907153 -0.82902677 -0.8103873  ...  0.92522407  0.75321348
+   0.52508175]
+ [-0.83907153 -0.82325668 -0.79876457 ...  0.96427357  0.84172689
+   0.66446403]
+ ...
+ [-0.83907153 -0.48233077 -0.01646558 ...  0.96449925  0.75196531
+   0.41982581]
+ [-0.83907153 -0.47324558  0.00392612 ...  0.92542163  0.68540362
+   0.37440839]
+ [-0.83907153 -0.46410908  0.02431613 ...  0.89579384  0.65690314
+   0.40107702]]
+</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 用Matplotlib来画出这个二维数组</span></span><br><span class="line">%matplotlib inline</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">plt.imshow(z, origin=<span class="string">'lower'</span>, extent=[<span class="number">0</span>, <span class="number">5</span>, <span class="number">0</span>, <span class="number">5</span>], cmap=<span class="string">'viridis'</span>)</span><br><span class="line">plt.colorbar();</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdn.net/20181021175953175?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTI1OTIxMQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="png"></p>
 
       
     </div>
@@ -472,7 +577,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/优先队列/" rel="tag"># 优先队列</a>
+            <a href="/tags/python/" rel="tag"># python</a>
+          
+            <a href="/tags/NumPy/" rel="tag"># NumPy</a>
           
         </div>
       
@@ -485,8 +592,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/10/15/LeetCode844/" rel="next" title="【LeetCode】Day6 Backspace String Compare">
-                <i class="fa fa-chevron-left"></i> 【LeetCode】Day6 Backspace String Compare
+              <a href="/2018/10/21/数组的计算：通用函数/" rel="next" title="python填坑-NumPy数组的计算：通用函数">
+                <i class="fa fa-chevron-left"></i> python填坑-NumPy数组的计算：通用函数
               </a>
             
           </div>
@@ -494,10 +601,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/10/17/LeetCode21/" rel="prev" title="【LeetCode】Day8 Merge Two Sorted Lists">
-                【LeetCode】Day8 Merge Two Sorted Lists <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -727,7 +830,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#题目描述"><span class="nav-number">1.</span> <span class="nav-text">题目描述</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#理解题意"><span class="nav-number">1.1.</span> <span class="nav-text">理解题意</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#算法"><span class="nav-number">1.2.</span> <span class="nav-text">算法</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#数组的计算：-广播"><span class="nav-number">1.</span> <span class="nav-text">数组的计算： 广播</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#广播的介绍"><span class="nav-number">1.1.</span> <span class="nav-text">广播的介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#广播的实际应用"><span class="nav-number">1.2.</span> <span class="nav-text">广播的实际应用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#数组的归一化"><span class="nav-number">1.2.1.</span> <span class="nav-text">数组的归一化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#画一个二维数组"><span class="nav-number">1.2.2.</span> <span class="nav-text">画一个二维数组</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
