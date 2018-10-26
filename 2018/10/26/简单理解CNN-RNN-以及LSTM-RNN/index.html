@@ -115,25 +115,30 @@
 
 
 
-  <meta name="description" content="学习数据结构中有关优先队列，堆的知识，并使用优先队列完成了LeetCode703的找出第K大的元素这道题。">
-<meta name="keywords" content="优先队列">
+  <meta name="description" content="本文是学习莫烦python的”有趣的机器学习”一模块的笔记。">
+<meta name="keywords" content="神经网络">
 <meta property="og:type" content="article">
-<meta property="og:title" content="【LeetCode】Day7 Kth Largest Element in a Stream">
-<meta property="og:url" content="http://yoursite.com/2018/10/16/LeetCode703/index.html">
+<meta property="og:title" content="简单理解CNN RNN 以及LSTM RNN">
+<meta property="og:url" content="http://yoursite.com/2018/10/26/简单理解CNN-RNN-以及LSTM-RNN/index.html">
 <meta property="og:site_name" content="沈徒一">
-<meta property="og:description" content="学习数据结构中有关优先队列，堆的知识，并使用优先队列完成了LeetCode703的找出第K大的元素这道题。">
+<meta property="og:description" content="本文是学习莫烦python的”有趣的机器学习”一模块的笔记。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-10-16T09:09:28.387Z">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20181026211928289.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTI1OTIxMQ==,size_27,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20181026212513238.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTI1OTIxMQ==,size_27,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20181026213215797.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTI1OTIxMQ==,size_27,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20181026215915189.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTI1OTIxMQ==,size_27,color_FFFFFF,t_70">
+<meta property="og:updated_time" content="2018-10-26T14:19:10.811Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="【LeetCode】Day7 Kth Largest Element in a Stream">
-<meta name="twitter:description" content="学习数据结构中有关优先队列，堆的知识，并使用优先队列完成了LeetCode703的找出第K大的元素这道题。">
+<meta name="twitter:title" content="简单理解CNN RNN 以及LSTM RNN">
+<meta name="twitter:description" content="本文是学习莫烦python的”有趣的机器学习”一模块的笔记。">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20181026211928289.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTI1OTIxMQ==,size_27,color_FFFFFF,t_70">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/10/16/LeetCode703/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/10/26/简单理解CNN-RNN-以及LSTM-RNN/"/>
 
 
 
@@ -143,7 +148,7 @@
   };
 </script>
 
-  <title>【LeetCode】Day7 Kth Largest Element in a Stream | 沈徒一</title>
+  <title>简单理解CNN RNN 以及LSTM RNN | 沈徒一</title>
   
 
 
@@ -311,7 +316,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/16/LeetCode703/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/26/简单理解CNN-RNN-以及LSTM-RNN/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="沈徒一">
@@ -328,7 +333,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">【LeetCode】Day7 Kth Largest Element in a Stream
+          <h1 class="post-title" itemprop="name headline">简单理解CNN RNN 以及LSTM RNN
               
             
           </h1>
@@ -353,7 +358,7 @@
                 
               
 
-              <time title="创建时间：2018-10-16 16:28:30 / 修改时间：17:09:28" itemprop="dateCreated datePublished" datetime="2018-10-16T16:28:30+08:00">2018-10-16</time>
+              <time title="创建时间：2018-10-26 22:16:57 / 修改时间：22:19:10" itemprop="dateCreated datePublished" datetime="2018-10-26T22:16:57+08:00">2018-10-26</time>
             
 
             
@@ -364,9 +369,9 @@
             
               <span class="post-letters-count">
               &nbsp; | &nbsp;
-              <span>459 字</span>
+              <span>1.5k 字</span>
               &nbsp; | &nbsp;
-              <span>2 min</span>
+              <span>5 min</span>
               </span>
             
           </span>
@@ -383,14 +388,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/算法/" itemprop="url" rel="index"><span itemprop="name">算法</span></a></span>
-
-                
-                
-                  ，
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/算法/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/AI学习/" itemprop="url" rel="index"><span itemprop="name">AI学习</span></a></span>
 
                 
                 
@@ -420,14 +418,37 @@
       
 
       
-        <p>学习数据结构中有关优先队列，堆的知识，并使用优先队列完成了LeetCode703的找出第K大的元素这道题。<br><a id="more"></a></p>
-<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>Design a class to find the kth largest element in a stream. Note that it is the kth largest element in the sorted order, not the kth distinct element.</p>
-<p>Your KthLargest class will have a constructor which accepts an integer k and an integer array nums, which contains initial elements from the stream. For each call to the method KthLargest.add, return the element representing the kth largest element in the stream.</p>
-<p><strong>Example：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">int k = 3;</span><br><span class="line">int[] arr = [4,5,8,2];</span><br><span class="line">KthLargest kthLargest = new KthLargest(3, arr);</span><br><span class="line">kthLargest.add(3);   // returns 4</span><br><span class="line">kthLargest.add(5);   // returns 5</span><br><span class="line">kthLargest.add(10);  // returns 5</span><br><span class="line">kthLargest.add(9);   // returns 8</span><br><span class="line">kthLargest.add(4);   // returns 8</span><br></pre></td></tr></table></figure></p>
-<h2 id="理解题意"><a href="#理解题意" class="headerlink" title="理解题意"></a>理解题意</h2><p>设计一个找到数据流中第K大元素的类（class）。注意是排序后的第K大元素，不是第K个不同的元素。</p>
-<p>你的 KthLargest 类需要一个同时接收整数 k 和整数数组nums 的构造器，它包含数据流中的初始元素。每次调用 KthLargest.add，返回当前数据流中第K大的元素。</p>
-<h2 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h2><p>使用一个优先队列，排序方法为降序排列，然后开始压入元素。如果压入元素以后，队列的大小大于k，那么就弹出队尾的元素。这样做的目的是保证队列始终大小为k，且由于是优先队列，这样队列的值就是前k个最大的数，然后返回队尾元素即可。</p>
-<p>直接看代码<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">KthLargest</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    priority_queue&lt;<span class="keyword">int</span>, <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;, greater&lt;<span class="keyword">int</span>&gt; &gt; p;</span><br><span class="line">    <span class="keyword">int</span> max_len;</span><br><span class="line">    KthLargest(<span class="keyword">int</span> k, <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; nums) &#123;</span><br><span class="line">        max_len = k;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>;i&lt;nums.size();i++)&#123;</span><br><span class="line">            p.push(nums[i]);</span><br><span class="line">            <span class="keyword">if</span>(p.size() &gt; max_len)&#123;</span><br><span class="line">                p.pop();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span> val)</span> </span>&#123;</span><br><span class="line">        p.push(val);</span><br><span class="line">        <span class="keyword">if</span>(p.size() &gt; max_len)&#123;</span><br><span class="line">            p.pop();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> p.top();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Your KthLargest object will be instantiated and called as such:</span></span><br><span class="line"><span class="comment"> * KthLargest obj = new KthLargest(k, nums);</span></span><br><span class="line"><span class="comment"> * int param_1 = obj.add(val);</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure></p>
+        <p>本文是学习<a href="https://morvanzhou.github.io/" target="_blank" rel="noopener">莫烦python</a>的”有趣的机器学习”一模块的笔记。<br><a id="more"></a></p>
+<h1 id="神经网络"><a href="#神经网络" class="headerlink" title="神经网络"></a>神经网络</h1><p><strong>神经网络</strong>是一种数学模型，是存在于计算机的神经系统，由大量的神经元相连接并进行计算，在外界信息的基础上，改变内部的结构，常用来对输入和输出间复杂的关系进行建模。</p>
+<p>神经网络由大量的节点和之间的联系构成，负责传递信息和加工信息，神经元也可以通过训练而被强化。</p>
+<p>神经网络有着两种比较火的分类，就是人们经常谈论的<strong>CNN</strong>和<strong>RNN</strong></p>
+<h2 id="CNN"><a href="#CNN" class="headerlink" title="CNN"></a>CNN</h2><p>Convolutional Neural Network 卷积神经网络</p>
+<p>这种神经网络主要应用于图片识别等计算机视觉方面，如最近很火的Alpha Go就是应用了该项技术。</p>
+<p>我们把这个词分开来理解，卷积和神经网络。</p>
+<p>所谓卷积，指的是计算机处理我们的图片时，不再是对单个的每个像素点进行处理，而是选择了一小块像素区域进行识别，这样的好处在于计算机可以看到一个较为连续的图形，而不只是单个的一个点，增加了神经网络对于图片的理解。</p>
+<p>接着，计算机再对小块像素区域的边缘区域进行同样的扫描获取，不断的获取像素的边缘区域，使计算机对图片的高级结构有了更深的理解。</p>
+<p><strong>举个例子</strong>，例如识别人的脸的时候，假如计算机先看到了鼻子，接着会看到眼睛和嘴巴，再接着看就会看到整个人的脸部了。最后我们再把这些信息套入几层普通的全连接神经层进行分类, 这样就能得到输入的图片能被分为哪一类的结果了.</p>
+<p><img src="https://img-blog.csdnimg.cn/20181026211928289.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTI1OTIxMQ==,size_27,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>在这个谷歌对于CNN的介绍中可以看到关于卷积更多的知识介绍，还未深入学习。</p>
+<h2 id="RNN"><a href="#RNN" class="headerlink" title="RNN"></a>RNN</h2><p>Recurrent Neural Network 循环神经网络</p>
+<p>这个是针对语言分析, 序列化数据的神经网络。比如它可以对你说的一句话进行分析。</p>
+<p>我：今天晚上我要做红烧排骨吃，所以我要去买。。。（巴拉巴拉）<br>我：计算机，今天晚上我要吃什么？<br>计算机：辣子鸡</p>
+<p>可见在上述对话中，计算机分析错了，这个时候它就会进行学习，纠正自己的错误，最终会得到我们想要的红烧排骨的答案。<br>计算机会按照这段话的顺序来记忆这些信息。比如会按这个顺序来记忆这两个信息。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">今天晚上 --&gt; 红烧排骨</span><br></pre></td></tr></table></figure>
+<p>但是要注意的是这个是有顺序的，下面的图片可以帮助我们理解。<br><img src="https://img-blog.csdnimg.cn/20181026212513238.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTI1OTIxMQ==,size_27,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>每次 RNN 运算完之后都会产生一个对于当前状态的描述 , state. 我们用简写 S( t) 代替, 然后这个 RNN开始分析 x(t+1) , 他会根据 x(t+1)产生s(t+1), 不过此时 y(t+1) 是由 s(t) 和 s(t+1) 共同创造的. </p>
+<h2 id="LSTM-RNN"><a href="#LSTM-RNN" class="headerlink" title="LSTM RNN"></a>LSTM RNN</h2><p>在上述的过程中，如果计算机学习自己错误的时候，每个环节会产生一个误差，如果误差系数小于1，就是下面的情况<br><img src="https://img-blog.csdnimg.cn/20181026213215797.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTI1OTIxMQ==,size_27,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>误差会越来越小，容易得到正确的结果，这种问题叫做梯度消失或者梯度弥散 Gradient vanishing. 反之如果 W 是一个大于1 的数, 比如1.1 不断累乘, 则到最后变成了无穷大的数, RNN被这无穷大的数撑死了, 这种情况我们叫做剃度爆炸, Gradient exploding. 这就是普通 RNN 没有办法回忆起久远记忆的原因.</p>
+<p>而LSTM RNN（long-short term memory Recurrent Neural Network）</p>
+<p>为了理解这个算法大概的意思，用一个看电影的例子来说明。</p>
+<p>电影剧情分为主线和支线。</p>
+<p>主线就是那些很重要的内容，而在主线进行的过程中总会遇到各种各样的支线剧情，这些支线有的对主线影响很大，有的影响比较小。我们需要判断支线对主线的影响程度，从而确定是否需要对主线剧情进行修改。在经过了所有支线以后，我们就得到了一个新的，完整的主线。这个就是我们想要的东西。</p>
+<p>而LSTM RNN 会对支线产生的影响 进行判断，从而确定是否遗忘一些主线内容，这对记忆量会有一定的优化。</p>
+<p>作者的解释<br><img src="https://img-blog.csdnimg.cn/20181026215915189.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTI1OTIxMQ==,size_27,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<blockquote>
+<p>LSTM 就是为了解决这个问题而诞生的. LSTM 和普通 RNN 相比, 多出了三个控制器. (输入控制, 输出控制, 忘记控制). 现在, LSTM RNN 内部的情况是这样.<br>他多了一个 控制全局的记忆, 我们用粗线代替. 为了方便理解, 我们把粗线想象成电影或游戏当中的 主线剧情. 而原本的 RNN 体系就是 分线剧情. 三个控制器都是在原始的 RNN 体系上, 我们先看 输入方面 , 如果此时的分线剧情对于剧终结果十分重要, 输入控制就会将这个分线剧情按重要程度 写入主线剧情 进行分析. 再看 忘记方面, 如果此时的分线剧情更改了我们对之前剧情的想法, 那么忘记控制就会将之前的某些主线剧情忘记, 按比例替换成现在的新剧情. 所以 主线剧情的更新就取决于输入 和忘记 控制. 最后的输出方面, 输出控制会基于目前的主线剧情和分线剧情判断要输出的到底是什么.基于这些控制机制, LSTM 就像延缓记忆衰退的良药, 可以带来更好的结果.</p>
+</blockquote>
+<p>而这些神经网络的具体实现和学习，留在以后来进行。</p>
 
       
     </div>
@@ -472,7 +493,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/优先队列/" rel="tag"># 优先队列</a>
+            <a href="/tags/神经网络/" rel="tag"># 神经网络</a>
           
         </div>
       
@@ -485,8 +506,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/10/15/LeetCode844/" rel="next" title="【LeetCode】Day6 Backspace String Compare">
-                <i class="fa fa-chevron-left"></i> 【LeetCode】Day6 Backspace String Compare
+              <a href="/2018/10/21/python填坑-数组的计算：广播/" rel="next" title="python填坑 数组的计算：广播">
+                <i class="fa fa-chevron-left"></i> python填坑 数组的计算：广播
               </a>
             
           </div>
@@ -494,10 +515,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/10/17/LeetCode21/" rel="prev" title="【LeetCode】Day8 Merge Two Sorted Lists">
-                【LeetCode】Day8 Merge Two Sorted Lists <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -731,7 +748,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#题目描述"><span class="nav-number">1.</span> <span class="nav-text">题目描述</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#理解题意"><span class="nav-number">1.1.</span> <span class="nav-text">理解题意</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#算法"><span class="nav-number">1.2.</span> <span class="nav-text">算法</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#神经网络"><span class="nav-number">1.</span> <span class="nav-text">神经网络</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#CNN"><span class="nav-number">1.1.</span> <span class="nav-text">CNN</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#RNN"><span class="nav-number">1.2.</span> <span class="nav-text">RNN</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#LSTM-RNN"><span class="nav-number">1.3.</span> <span class="nav-text">LSTM RNN</span></a></li></ol></li></ol></div>
             
 
           </div>
